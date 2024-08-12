@@ -10,15 +10,17 @@
     <title>Netflix clone</title>
 </head>
 <body>
+    <!-- Container for Navigation bar -->
     <div class="header">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
             <div class="both">
                 <div class="out-line">
-                <select class="lang-btn">
-                    <option value="volvo">English</option>
-                    <option value="saab">Hindi</option>
-                </select>
+                    <!-- Container for Language selection -->
+                    <select class="lang-btn">
+                        <option value="volvo">English</option>
+                        <option value="saab">Hindi</option>
+                    </select>
                 </div>
                 <button>Sign In</button>
             </div>
@@ -28,14 +30,22 @@
             <h3>Watch anywhere. Cancel anytime.</h3>
             <p style="font-size: 20px; padding: 5px;">Ready to watch? Enter your email to create or restart your membership.</p>
             <form class="email-signup">
+                <!-- form container for POSTING email input when pressing submit button -->
                 <input type="email" placeholder="Email Address" required>
                 <button type="submit">Get Started  ></button>
             </form>
         </div>
     </div>
-    <div style="height: 10px; background-color: #232323;"></div>
-    <div class="features">
+    
 
+    <!-- Gray strip -->
+    <div style="height: 10px; background-color: #232323;"></div>
+
+
+
+    <div class="features">
+        <!-- This container contains 4 columns named as "row" .
+            each has 2 containers for image and texts  -->
         <div class="row">
             <div class="text-col">
                 <h2>Enjoy on your TV</h2>
@@ -73,9 +83,15 @@
             </div>
         </div>
     </div>
+
+
+    <!-- This container for Radio buttons for Questions. it contain 6 question list -->
     <div class="faq">
         <h2>Frequently Asked Questions</h2>
+        <!-- Each class "accordion" represents unordered list-->
         <ul class="accordion">
+            <!-- each list contains Radio buttons .when you checked the radio button ,
+                the class "content" will load .-->
             <li>
                 <input type="radio" name="accordion" id="first">
                 <label for="first">What is Netflix ?</label>
@@ -111,17 +127,28 @@
                 </div>
             </li>
         </ul>
+
+        <!-- br for line skipping -->
         <br>
         <br>
+
         <small style="font-size: 20px;" >Ready to watch? Enter your email to create or restart your membership.</small>
         <br>
+
+
+        <!-- second form container for POSTING email input when pressing submit button -->
         <form class="email-signup-2">
             <input type="email" placeholder="Email Address" required>
             <button type="submit">Get Started ></button>
         </form>
     </div>
+
+
+    <!-- Container for footer section -->
     <div class="footer">
         <h3>Questions ? Call <a href="netflix.html">000-800-919-1694</a></h3>
+
+        <!-- Class "foot-grid" is a grid display type-->
         <div class="foot-grid">
             <a href="">FAQ</a>
             <a href="">Help Centre</ahre>
@@ -139,6 +166,8 @@
             <a href="">Legal Notices</a>
             <a href="">Only on Netfilx</a>
         </div>
+
+        <!-- Container for Language selection -->
         <select class="lang-btn-2">
             <option value="volvo">English</option>
             <option value="saab">Hindi</option>

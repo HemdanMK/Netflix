@@ -23,7 +23,7 @@ body{
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(images/header-2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(images/header-image.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -98,6 +98,7 @@ nav button{
     padding: 12px 10px;
     font-size: 20px;
     color: white;
+    background-color: black;
 }
 
 .lang-btn img{
@@ -226,10 +227,14 @@ label::after{
     transition: transform 1s ;
 }
 
+
+/* Initially no radio buttons selected */
 input[type="radio"]{
     display: none;
 }
 
+
+/* contents of class "content" */
 .accordion .content{
     background: #303030;
     text-align: left;
@@ -239,6 +244,7 @@ input[type="radio"]{
     transition: padding .5s;
 }
 
+/* Both CSS load after checked radio button */
 .accordion input[type="radio"]:checked+label+.content{
     max-height: 600px;
     padding: 30px 20px;
@@ -323,14 +329,15 @@ input[type="radio"]{
     line-height: 2;
     position: relative ;
 }
+.footer h3 a{
+    color: white;
+    font-weight: 100;
+}
+
+
 .net-in{
     position: absolute;
     top: 250px;
     padding-top: 25px;
-}
-
-.footer h3 a{
-    color: white;
-    font-weight: 100;
 }
 
